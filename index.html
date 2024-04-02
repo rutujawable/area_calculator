@@ -8,18 +8,31 @@
         body{
             background-color: #FF3CAC;
         background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-        min-height: 100%vh;
+        min-height: 100vh;
 
         }
-
-        div{
-            background-color: white;
-            margin: 30px auto;
-            width: 500px;
-            border-radius: 5px;
-            padding: 40px;
-           
+        .container
+        {
+        background-color: rgb(135, 183, 225);
+         width: 500px;
+         height: 270px;
+         display: block;
+         margin: 0 auto;
+         padding: 20px;
+         border: 2px solid black;
+         box-shadow: 5px 10px 20px 1px rgb(55, 53, 52);
         }
+        @media screen and (max-width:768px)
+        {
+            .container
+        {
+         background-color: white;
+         width: 90%;
+        
+        }
+    }
+            
+        
         .title{
             margin: 50px auto;
             color: white;
@@ -73,21 +86,14 @@
             font-size: 20px;
         }
 
-        @media screen and ( max-width : 768px) {
-            div{
-                width:80%;
-
-                
-            }
-            .btn{
-                margin-left: 100px;
-            }
-
-            .btn-1{
-                margin-left: 100px;
-            }
+      
             
-        } 
+
+
+
+            
+            
+        
             
         
 
@@ -96,7 +102,7 @@
 <body>
      <p class="title"> <b>AREA OF THE SQUARE CALCULATOR </b></p>
 
-    <div>
+    <div class="container">
         <input type="text" class="input-css" placeholder="Enter side of the square" id="side">
 
         <p id="ans" class="answer" >  </p>
